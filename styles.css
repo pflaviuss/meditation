@@ -74,12 +74,29 @@ video{
 }
 
 .sound-picker button:nth-child(1){
-    background:#4972a1;
+    background:#38bdf8;
 }
 .sound-picker button:nth-child(2){
-    background:#a14f49; 
+    background:#818cf8;
+}
+.sound-picker button:nth-child(3){
+    background:#5C87B3;
+}
+.sound-picker button:nth-child(4){
+    background:#FFC07E; 
 }
 
 .sound-picker button img{
     height:100%;
 }
+a{
+    color:white;
+}
+i{
+    transition:.5s ease-in-out;
+}
+.footer i:hover{
+    rotate:2turn;
+    color:white;
+}
+

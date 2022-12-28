@@ -3,6 +3,7 @@ const app = () => {
   const play = document.querySelector(".play");
   const outline = document.querySelector(".moving-outline circle");
   const video = document.querySelector(".vid-container video");
+  const volume = document.querySelector("#volume");
 
   //Sounds
   const sound = document.querySelectorAll(".sound-picker button");
@@ -11,7 +12,6 @@ const app = () => {
   const timeSelect = document.querySelectorAll('.time-select button')
   //Get the length of the outline
   const outlineLength = outline.getTotalLength();
-  console.log(outlineLength);
   //Duration
   let fakeDuration = 600;
 
@@ -55,6 +55,12 @@ const app = () => {
         play.src = './svgs/play.svg'
     }
   };
+
+  //adjust volume 
+
+  volume.addEventListener('change', function(e){
+    song.volume = e.currentTarget.value / 100;
+  })
 
   //animate the circle and check the time 
 

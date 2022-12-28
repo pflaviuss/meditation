@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2ee32fbaa3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
 
     <title>Meditation app</title>
@@ -15,13 +16,15 @@
           <source src="/videos/2min ocean.mp4" />
         </video>
       </div>
-
       <div class="time-select">
+        <input id= "volume" type="range">
         <button data-time="118">2 Minutes</button>
         <button data-time="300">5 Minutes</button>
         <button data-time="600">10 Minutes</button>
+        
       </div>
       <div class="player-container">
+        
         <audio class="song">
           <source src="./sounds/2min song.mp3" />
         </audio>
@@ -59,10 +62,19 @@
           />
         </svg>
         <h3 class="time-display">0:00</h3>
+        
+        
       </div>
+     
       <div class="sound-picker">
+        <button data-sound="./sounds/3min song.mp3"
+        data-video="./videos/mountain.mp4">
+        <img src="./svgs/mountain.svg" alt="mountain" /></button>
+        <button data-sound="./sounds/5min song.mp3"
+          data-video="./videos/sense.mp4">
+          <img src="./svgs/mountain.svg" alt="mountain" /></button>
         <button
-          data-sound="./sounds/2min song.mp3"
+          data-sound="./sounds/10min song.mp3"
           data-video="./videos/rain.mp4"
         >
           <img src="./svgs/rain.svg" alt="rain" />
@@ -73,9 +85,13 @@
         >
           <img src="/svgs/beach.svg" alt="beach" />
         </button>
+        <footer class="footer"></i><a href="https://github.com/pflaviuss"><i class="fa-brands fa-github"></i> Made by @pflaviuss</a></footer>
       </div>
+   
+      
     </div>
-
+    
+    
     <script src="script.js"></script>
   </body>
 </html>
